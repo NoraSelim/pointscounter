@@ -1,10 +1,11 @@
- # Force everything in lib to be recognized as Dart
-lib/**/*.dart linguist-detectable
-lib/**/*.dart linguist-language=Dart
+# Ignore auto-generated platform files
+android/* linguist-vendored
+ios/* linguist-vendored
+linux/* linguist-vendored
+macos/* linguist-vendored
+windows/* linguist-vendored
 
-# Forcefully ignore the platform folders
-android/** linguist-vendored
-ios/** linguist-vendored
-windows/** linguist-vendored
-linux/** linguist-vendored
-macos/** linguist-vendored
+# Specifically target C++ extensions if the above isn't enough
+*.cc linguist-vendored
+*.cpp linguist-vendored
+*.h linguist-vendored
