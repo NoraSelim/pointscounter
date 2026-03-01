@@ -1,11 +1,10 @@
-# Ignore auto-generated C++ files from statistics
+ # Force everything in lib to be recognized as Dart
+lib/**/*.dart linguist-detectable
+lib/**/*.dart linguist-language=Dart
 
-*.cpp linguist-vendored
-
-*.h linguist-vendored
-
-*.cc linguist-vendored
-
-# Ensure Dart is detected
-
-*.dart linguist-detectable=true
+# Forcefully ignore the platform folders
+android/** linguist-vendored
+ios/** linguist-vendored
+windows/** linguist-vendored
+linux/** linguist-vendored
+macos/** linguist-vendored
