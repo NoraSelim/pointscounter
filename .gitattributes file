@@ -1,0 +1,11 @@
+# Ignore auto-generated C++ files from statistics
+
+*.cpp linguist-vendored
+
+*.h linguist-vendored
+
+*.cc linguist-vendored
+
+# Ensure Dart is detected
+
+*.dart linguist-detectable=true
