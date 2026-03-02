@@ -199,3 +199,4 @@ class _PointscounterState extends State<Pointscounter> {
     );
   }
 }
+// update language stats
