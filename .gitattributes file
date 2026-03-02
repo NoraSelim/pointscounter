@@ -1,14 +1,9 @@
-# Exclude all files in platform-specific folders regardless of depth
-android/** linguist-vendored
-ios/** linguist-vendored
-linux/** linguist-vendored
-macos/** linguist-vendored
-windows/** linguist-vendored
+# Force GitHub to treat these folders as Dart documentation/data
+android/** linguist-documentation
+ios/** linguist-documentation
+linux/** linguist-documentation
+macos/** linguist-documentation
+windows/** linguist-documentation
 
-# Force all .dart files to be detectable
+# Ensure Dart is the priority
 *.dart linguist-detectable=true
-
-# Explicitly hide all C++ related files from stats
-**/*.cpp linguist-vendored
-**/*.cc linguist-vendored
-**/*.h linguist-vendored
